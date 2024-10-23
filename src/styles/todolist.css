@@ -1,0 +1,264 @@
+:root {
+    --checkbox-border-color: #8b8c89;
+    --checkbox-checked-color: #274c77;
+    --checkbox-hover-color: #a3cef1;
+    --checkbox-disabled-bg-color: #d9d9d9;
+}
+
+.header {
+    display: flex;
+    place-self: center;
+    font-family: monospace;
+    font-size: 60px;
+    font-weight: 500;
+    background-image: linear-gradient(to left, #222222, #4e4e4e);
+    color: transparent;
+    background-clip: text;
+    border: none;
+    margin: 10px;
+}
+
+.header-input {
+    font-size: 20px;
+    text-align: center;
+    place-self: center;
+    width: 100%;
+    max-width: 300px;
+    min-width: 300px;
+    height: 100%;
+    max-height: 100px;
+    min-height: 100px;
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 3px;
+    border-radius: 8px;
+    padding: 7px 16px;
+    box-shadow: rgba(77, 79, 82, 0.2) 0px 8px 24px;
+    border: 2px solid rgb(184, 180, 180);
+    font-size: 0.8rem;
+    outline: none;
+    transition: 0.5s ease;
+}
+
+.todos {
+    display: flex;
+    place-content: center;
+    display: grid;
+    margin: 5px;
+    padding-bottom: 20px;
+    font-family: monospace;
+}
+
+.todo {
+    display: flex;
+    place-content: center;
+    font-family: monospace;
+    transition: opacity 0.3s;
+    width: 30px;
+    padding-left: 20px;
+}
+
+
+.filters {
+    display: flex;
+    place-self: center;
+    justify-self: center;
+    justify-content: center;
+    max-width: 100px;
+    min-width: 100px;
+}
+
+.btn-all {
+    margin-right: 5px;
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #111827;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: .75rem 1rem;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+.btn-active {
+    margin-right: 5px;
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #111827;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: .75rem 1rem;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+.btn-completed {
+    place-self: center;
+    margin-right: 5px;
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #111827;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: .75rem 1rem;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+.btn-all:hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.btn-active:hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.btn-completed:hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.todo-input {
+    display: flex;
+    place-self: center;
+    justify-self: center;
+    justify-content: center;
+}
+
+.todo-text {
+    font-size: 0.8rem;
+    text-align: center;
+    place-self: center;
+    width: 100%;
+    max-width: 150px;
+    min-width: 150px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 3px;
+    border-radius: 8px;
+    padding: 7px 16px;
+    box-shadow: rgba(77, 79, 82, 0.2) 0px 8px 24px;
+    border: 2px solid rgb(184, 180, 180);
+    font-size: 0.8rem;
+    outline: none;
+    transition: 0.5s ease;
+}
+
+.todo-input:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-color: rgb(138, 175, 255);
+}
+
+input[type="checkbox"] {
+    place-self: center;
+    box-sizing: border-box;
+    width: 20px;
+    min-width: 22px;
+    height: 20px;
+    margin: 6px;
+    padding: 0;
+    border: 2px solid var(--checkbox-border-color);
+    border-radius: 5px;
+    appearance: none;
+    background-color: transparent;
+    outline: none;
+    transition: outline 0.1s;
+}
+
+input[type="checkbox"]:checked {
+    background-size: cover;
+    padding: 2px;
+}
+
+input[type="checkbox"]:not(:disabled):checked {
+    border-color: var(--checkbox-checked-color);
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 32 32" xml:space="preserve"><path style="fill: %23274c77" d="M11.941,28.877l-11.941-11.942l5.695-5.696l6.246,6.246l14.364-14.364L32,8.818"/></svg>');
+}
+
+input[type="checkbox"]:disabled {
+    background-color: var(--checkbox-disabled-bg-color);
+}
+
+input[type="checkbox"]:disabled:checked {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 32 32" xml:space="preserve"><path style="fill: %238b8c89" d="M11.941,28.877l-11.941-11.942l5.695-5.696l6.246,6.246l14.364-14.364L32,8.818"/></svg>');
+}
+
+@media (hover: hover) {
+    input[type="checkbox"]:not(:disabled):hover {
+      background-color: var(--checkbox-hover-color);
+      outline: 2px solid var(--checkbox-hover-color);
+      transform: scale(1);
+    }
+}
+
+.p {
+    display: flex;
+    place-self: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.task-text {
+    display: flex;
+    place-self: center;
+    font-size: 30px;
+    margin: 8px;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.delete-btn {
+    display: flex;
+    place-content: center;
+    margin-left: 10px;
+    padding: 10px;
+    margin: 4px;
+    border: none;
+    background: none;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    display: flex;
+    place-content: center;
+    margin-left: 10px;
+    padding: 10px;
+    margin: 4px;
+    border: none;
+    background: none;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
