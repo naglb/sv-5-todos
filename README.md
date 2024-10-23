@@ -7,7 +7,7 @@
 - Styled completely in my own CSS way(used some buttons online as a template and edited for myself)
 
 ### This is hard
-- This is my first ever time writing Svelte or TypeScript.
+- This is my first ever time writing Svelte or TypeScript(I'm also a beginner in JS).
 - I understand it when I read it.
 - I *kind of* understand it when I write it (sometimes I need help rearranging things)
 - This was **EXTREMELY** fun to build!
